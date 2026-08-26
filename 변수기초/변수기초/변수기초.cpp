@@ -11,8 +11,8 @@ int hp; // 그리고 30000이면 아쉽고 21억 정도면 충분히 HP를 표�
 
 int main() // main으로 들어와 실행이 된다. 
 {
-    hp = 50; // 50을 hp에 넣는다.
+    hp = 150; // 50을 hp에 넣는다.
 
     //Stack 영역
-    cout << "Hello World!\n";
+    cout << hp << endl;
 }
