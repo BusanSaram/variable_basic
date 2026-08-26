@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="변수기초/변수기초.vcxproj" Id="b2173f84-c64d-4400-b0ae-d560f4de0479" />
+</Solution>

@@ -1,6 +1,20 @@
 # Prerequisites
 *.d
 
+# ===== Visual Studio =====
+.vs/
+Debug/
+Release/
+x64/
+x86/
+*.user
+*.suo
+*.sdf
+*.opendb
+*.VC.db
+*.aps
+*.ipch
+
 # Compiled Object files
 *.slo
 *.lo
