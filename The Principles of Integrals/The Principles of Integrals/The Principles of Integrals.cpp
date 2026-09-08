@@ -2,11 +2,13 @@
 
 using namespace std;
 
-//사칙연산 
 int hp;
+int a;
+int b;
 int main(){
-	hp = hp++; // 이 줄 끝나고 증가
-	hp + 1; //증감
-	hp = ++hp; // 바로 증가
+	hp = 100;
+	a = 5;
+	b = 2;
+	cout << (hp * b + a / b); // 괄호 먼저, */ 먼저 그다음에 덧셈
 }
  
