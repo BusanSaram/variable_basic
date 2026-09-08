@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="The Principles of Integrals/The Principles of Integrals.vcxproj" />
+  <Project Path="The Principles of Integrals/The Principles of Integrals.vcxproj" Id="ddc0181e-bbe2-4ffc-b1aa-4211dcbef4c4" />
 </Solution>
