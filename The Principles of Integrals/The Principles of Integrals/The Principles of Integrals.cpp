@@ -14,10 +14,27 @@ int main(){
 		cout << "가위를 냈다" << endl;
 	}
 	else if(choice == 1){
-		cout << "바위를 냈다." << endl;
+		cout << "바위를 냈다" << endl;
 	}
-	else {
-		cout << "보를 냈다." << endl;
+	else if(choice ==2) {
+		cout << "보를 냈다" << endl;
+	}
+
+	//switch-case break
+	switch (choice) // break를 넣어야지 다음 케이스로 넘어가는 것을 막을 수 있다.
+	{
+	case 0:
+		cout << "가위를 냈다" << endl;
+		break;
+	case 1:
+		cout << "바위를 냈다" << endl;
+		break;
+	case 2:
+		cout << "보를 냈다" << endl;
+		break;
+	default:
+		cout << "아무것도 안냄" << endl;
+		break;
 	}
 }
  
