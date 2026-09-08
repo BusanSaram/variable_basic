@@ -2,39 +2,33 @@
 
 using namespace std;
 
-//논리연산
-//비밀번호도 맞아야 하지만 아이디도 맞아 떨어져야지 로그인이 가능하다.
+//반복문
 
-// 분기문과 반복문만 잘하면 어떠한 코드도 거의 만들 수 있다.
-
-int choice; // 0 가위 1 바위 2 보
+int cnt; // 0 가위 1 바위 2 보
 
 int main(){
-	if (choice == 0) {
-		cout << "가위를 냈다" << endl;
-	}
-	else if(choice == 1){
-		cout << "바위를 냈다" << endl;
-	}
-	else if(choice ==2) {
-		cout << "보를 냈다" << endl;
+	//while
+	//for
+	//do while
+
+	cnt= 0;
+
+
+	//정해지지 않은 횟수만큼 돌아야 할 경우는 while을 쓴다. 
+	while (cnt < 5) {
+		cout << "hello" << endl;
+		cnt++;
 	}
 
-	//switch-case break
-	switch (choice) // break를 넣어야지 다음 케이스로 넘어가는 것을 막을 수 있다.
-	{
-	case 0:
-		cout << "가위를 냈다" << endl;
-		break;
-	case 1:
-		cout << "바위를 냈다" << endl;
-		break;
-	case 2:
-		cout << "보를 냈다" << endl;
-		break;
-	default:
-		cout << "아무것도 안냄" << endl;
-		break;
+	//정해진 횟수만큼 돌아야 할 경우는 for문을 쓰고 
+	for (int i = 0; i < 100; i++) { // for은  stack영역에 포함되는 i를 local에서 잠깐 쓰고 반환함.
+		//i == 3에서 continue를 써서 바로 hello를 쓰지 않고 i== 4로 넘어가게 만들 수 있다.
+		if (i == 3) continue;
+		
+		cout << "hello" << endl;
+
+		//특정 부분을 찾았으면 빠져나오게 할 수 있다. break를 써서
+		if (i== 4) break;
 	}
 }
  
