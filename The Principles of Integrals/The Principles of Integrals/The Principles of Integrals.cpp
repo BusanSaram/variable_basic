@@ -1,14 +1,19 @@
 ﻿#include <iostream>
 
 using namespace std;
-
+bool result;
 int hp;
-int a;
-int b;
+
 int main(){
+	// == 같은지
+	//result = (a==b);
+
+	//<
+	//<=
+	//>
+	//>=
+
 	hp = 100;
-	a = 5;
-	b = 2;
-	cout << (hp * b + a / b); // 괄호 먼저, */ 먼저 그다음에 덧셈
+	result = (hp <= 0); // hp가 0이 되었는지 알리기 위해서 0이되면 죽으니까. 그것을 감지
 }
  
