@@ -55,11 +55,15 @@ const int PAPER = 2;
 이렇게 하는것 보다 enum을 더 많이 쓴다. 
 */
 
+//열거형
 enum ENUM_RCP {
 	SCISSORS,
 	ROCK,
 	PAPER
 };
+
+//매크로도 가능 열거형을 사용하는 것에서는 그냥 매크로 잘 안씀
+// #define DEF_SCISSORS 0;
 
 int main(){
 	
