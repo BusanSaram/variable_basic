@@ -47,9 +47,19 @@ time(0)은 매초 바뀌니까, 이걸 시작값으로 주면 실행할 때마�
 이름은 seed + rand 라서 srand입니다. seed는 씨앗이라는 뜻이고요.
 */
 //ctrl alt 여러 줄 선택가능 RAM에 data중에서 변하지 않는 영역이 있는데 그곳으로 들어간다 
+
+/*
 const int SCISSORS = 0;
 const int ROCK = 1;
 const int PAPER = 2;
+이렇게 하는것 보다 enum을 더 많이 쓴다. 
+*/
+
+enum ENUM_RCP {
+	SCISSORS,
+	ROCK,
+	PAPER
+};
 
 int main(){
 	
