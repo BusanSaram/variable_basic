@@ -46,9 +46,13 @@ time(0)은 매초 바뀌니까, 이걸 시작값으로 주면 실행할 때마�
 
 이름은 seed + rand 라서 srand입니다. seed는 씨앗이라는 뜻이고요.
 */
+//ctrl alt 여러 줄 선택가능 RAM에 data중에서 변하지 않는 영역이 있는데 그곳으로 들어간다 
+const int SCISSORS = 0;
+const int ROCK = 1;
+const int PAPER = 2;
 
 int main(){
-
+	
 	srand(time(0)); // 프로그램 켤 때마다 똑같은 숫자만 나온다. 키면 켤때마다 다른 숫자가 나온다
 	while (true) {
 		cout << "가위(0) 바위(1) 보(2) 골라주세요" << endl;
@@ -64,18 +68,18 @@ int main(){
 
 		switch (value)
 		{
-		case 0 : //가위
+		case SCISSORS : //가위
 			switch (computerValue)
 			{
-			case 0: //가위
+			case SCISSORS: //가위
 				cout<< "적 가위" << endl;
 				cout << "draw" << endl;
 				break;
-			case 2: //바위
+			case ROCK: //바위
 				cout << "적 바위" << endl;
 				cout << "lose" << endl;
 				break;
-			case 3: //보
+			case PAPER: //보
 				cout << "적 보" << endl;
 				cout << "win" << endl;
 				break;
@@ -84,18 +88,18 @@ int main(){
 				break;
 			}
 			break;
-		case 1 : //바위
+		case ROCK : //바위
 			switch (computerValue)
 			{
-			case 0: //가위
+			case SCISSORS: //가위
 				cout << "적 가위" << endl;
 				cout << "win" << endl;
 				break;
-			case 2: //바위
+			case ROCK: //바위
 				cout << "적 바위" << endl;
 				cout << "draw" << endl;
 				break;
-			case 3: //보
+			case PAPER: //보
 				cout << "적 보" << endl;
 				cout << "lose" << endl;
 				break;
@@ -104,18 +108,18 @@ int main(){
 				break;
 			}
 			break;
-		case 2: //보
+		case PAPER: //보
 			switch (computerValue)
 			{
-			case 0: //가위
+			case SCISSORS: //가위
 				cout << "적 가위" << endl;
 				cout << "lose" << endl;
 				break;
-			case 2: //바위
+			case ROCK: //바위
 				cout << "적 바위" << endl;
 				cout << "win" << endl;
 				break;
-			case 3: //보
+			case PAPER: //보
 				cout << "적 보" << endl;
 				cout << "draw" << endl;
 				break;
@@ -131,3 +135,4 @@ int main(){
 	}
 }
  
+//0,1,2 이런식으로 하면 다른 사람들이 가독성이 늦어진다. 
