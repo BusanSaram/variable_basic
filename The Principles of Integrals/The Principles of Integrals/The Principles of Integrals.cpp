@@ -7,21 +7,17 @@ using namespace std;
 
 // 분기문과 반복문만 잘하면 어떠한 코드도 거의 만들 수 있다.
 
-int hp;
+int choice; // 0 가위 1 바위 2 보
 
 int main(){
-	hp = 100;
-	if (hp <= 0) 
-	{ // 보통 게임 업계에선 이런 식으로 코드를 짠다.중괄호를 if 밑으로 가게함
-		cout << "몬스터를 처치" << endl;
+	if (choice == 0) {
+		cout << "가위를 냈다" << endl;
+	}
+	else if(choice == 1){
+		cout << "바위를 냈다." << endl;
 	}
 	else {
-		if (hp <= 30) {
-			cout << "몬스터가 도망감" << endl;
-		}
-		else {
-			cout << "몬스터가 반격함" << endl;
-		}
+		cout << "보를 냈다." << endl;
 	}
 }
  
