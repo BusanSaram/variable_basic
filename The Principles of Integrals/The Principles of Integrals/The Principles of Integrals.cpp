@@ -2,20 +2,30 @@
 
 using namespace std;
 
-// 구구단
+//간단한 전투 시스템
+int hp = 100; //몬스터HP
+int roundd = 1;
+int damage = 50;;// 플레이어 데미지
 
 int main(){
-	//2*1 =2
-	//2*2 = 4
-	//2*9 = 18
-	//9*9 = 81;
-		
-	for (int j = 2; j < 10; j++) {
-		for (int i = 1; i < 10; i++) {
-			cout << i*j << " ";
-		}
-		cout << endl;
-	}
+	while (true) {
+		hp -= damage;
 
+		if (hp < 0) hp = 0;
+
+		cout << "Round: " << roundd << "몬스터 체력: " << hp << endl;
+
+		if (hp == 0) {
+			cout << "몬스터 처치!" << endl;
+			break;
+		}
+
+		if (roundd == 5) {
+			cout << "제한 라운드 종료" << endl;
+			break;
+		}	
+
+		roundd++;
+	}
 }
  
